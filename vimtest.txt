@@ -1,0 +1,5 @@
+this is my myvimtest file
+
+:wq
+
+this is my final line at first save
