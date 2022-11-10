@@ -7,7 +7,7 @@ import pyfiglet
 import colorama
 from colorama import Fore
 
-banner = pyfiglet.figlet_format("A Game Of Rock, Paper, Scissors", font = "slant"  )
+banner = pyfiglet.figlet_format("A Game Of Rock, Paper, Scissors", font = "slant")
 print(Fore.GREEN + banner) #Fore.Green changes my text to green
 
 def main():
