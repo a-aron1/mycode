@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """This python program uses pyfiglet and colorama  
     you can install colorama with the "pip install colorama" command in your linux terminal
     you can install pyfiglet withthe "pip install pyfiglet" command in your linux terminal"""
