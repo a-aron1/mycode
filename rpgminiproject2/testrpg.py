@@ -28,9 +28,9 @@ def showStatus():
     #     print(rooms[currentRoom]['moves'])
     # for key, value in rooms[currentRoom].get('moves'):
     #     print(key, value)
-    if "moves" in rooms[currentRoom]:
-        print(key, value)
-    # print(rooms[currentRoom].get('moves'))
+    # if "moves" in rooms[currentRoom]:
+    #     print(key, value)
+    print("your available moves are\n",rooms[currentRoom].get('moves'))
     print("---------------------------")
 
 
@@ -51,16 +51,19 @@ rooms = {
             'Kitchen' : {
                   'north' : 'Hall',
                   'item'  : 'monster',
+                  'moves' : {'north' : 'Hall'}
                 },
             'Dining Room' : {
                   'west' : 'Hall',
                   'south': 'Garden',
                   'item' : 'potion',
                   'item' : 'snack',
+                  'moves' : {'west' : 'Hall', 'south' : 'Garden'}
                },
             'Garden' : {
                   'north' : 'Dining Room',
-                  'west' : 'Kitchen'
+                  'west' : 'Kitchen',
+                  'moves' : {'north' : 'Dining Room'}
             }
 
          }
