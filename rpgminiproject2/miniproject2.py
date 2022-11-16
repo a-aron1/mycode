@@ -45,7 +45,8 @@ rooms = {
             'Dining Room' : {
                   'west' : 'Hall',
                   'south': 'Garden',
-                  'item' : 'potion'
+                  'item' : 'potion',
+                  'item' : 'snack',
                },
             'Garden' : {
                   'north' : 'Dining Room'
