@@ -10,7 +10,7 @@ import json
 
 app= Flask(__name__)
 
-cellphones= [{
+cellphone= [{
     "manufacturer": "Apple",
     "model": "Iphone 12 Pro",
     "released": 2021,
@@ -36,7 +36,6 @@ def index():
            features = data["features"]
            cellphonedata.append({"manufacturer":manufacturer,"model":model,"released":released,"storage":storage,"features":features})
 
-    return jsonify(cellphonedata)
-
+    return jsonify(cellphone)
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=2224)
