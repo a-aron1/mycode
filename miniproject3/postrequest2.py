@@ -6,14 +6,14 @@ from pprint import pprint
 URL= "http://127.0.0.1:2224/"
 
 new_cellphone= {
-    "manufacturer": "Samsung",
-    "model": "S21 Ultra",
+    "manufacturer": "Google",
+    "model": "Pixel 7 Pro",
     "released": 2020,
-    "storage" : 256,
+    "storage" : 128,
     "features": [
-        "wifi",
-        "bluetooth",
-        "speakerphone",
+        "NFC",
+        "hiddenfolders",
+        "Android 9",
         "fingerprint-unlock"
               ]
              }
