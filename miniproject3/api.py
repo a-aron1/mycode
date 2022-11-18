@@ -30,10 +30,11 @@ def index():
         if data:
            data= json.loads(data)
            manufacturer = data["manufacturer"]
-           model = data["realName"]
+           model = data["model"]
            released = data["released"]
+           storage = data["storage"]
            features = data["features"]
-           cellphonedata.append({"manufacturer":manufacturer,"model":model,"released":released,"features":features})
+           cellphonedata.append({"manufacturer":manufacturer,"model":model,"released":released,"storage":storage,"features":features})
 
     return jsonify(cellphonedata)
 
