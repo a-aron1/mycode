@@ -12,6 +12,10 @@ import json
 
 app= Flask(__name__)
 
+@app.route("/success/<name>")
+def success(name):
+    return f"Welcome {name}\n"
+
 cellphone= [{
     "manufacturer": "Apple",
     "model": "Iphone 12 Pro",
@@ -19,7 +23,7 @@ cellphone= [{
     "storage" : 500,
     "features": ["itunes","airdrop","facetime","face-unlock"]}]
 
-@app.route("/", methods=["GET","POST"])
+@app.route("/data", methods=["GET","POST"])
 def index():
     if request.method == 'POST':
         data = request.json
@@ -39,10 +43,7 @@ def index():
 def hello():
     return "Hello, Welcome to mini project hello page"
 
-@app.route("/success/<name>")
-def success(name):
-    return f"Welcome {name}\n"
-@app.route("/start") # or user can land at "/start"
+@app.route("/") # or user can land at "/start"
 def start():
     return render_template("postmaker.html") # look for templates/postmaker.html
 # This is where postmaker.html POSTs data to
