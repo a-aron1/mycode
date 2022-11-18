@@ -34,7 +34,7 @@ def index():
            released = data["released"]
            storage = data["storage"]
            features = data["features"]
-           cellphonedata.append({"manufacturer":manufacturer,"model":model,"released":released,"storage":storage,"features":features})
+           cellphone.append({"manufacturer":manufacturer,"model":model,"released":released,"storage":storage,"features":features})
 
     return jsonify(cellphone)
 if __name__ == "__main__":
